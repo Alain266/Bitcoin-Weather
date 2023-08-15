@@ -1,5 +1,5 @@
 // Requête API
-const fetchBitcoinData = () => {
+const fetchBitcoinData = () => { //Affiche les données du bitcoin 
   const apiKey = '04c68aa5b52cdda6bb1abc160f8d8677';
   const apiUrl = `https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=${apiKey}`;
   fetch(apiUrl)
@@ -43,7 +43,7 @@ const fetchBitcoinData = () => {
   });
 }
 
-const fetchEthereumData = () => {
+const fetchEthereumData = () => { //Affiche les données de l'ethereum
   const apiKey = '04c68aa5b52cdda6bb1abc160f8d8677';
   const apiUrl = `https://financialmodelingprep.com/api/v3/quote/ETHUSD?apikey=${apiKey}`;
   fetch(apiUrl)
@@ -109,6 +109,8 @@ menu.appendChild(section2); // Ajout de section2 à menu
 const divMenu = document.getElementById("menu"); // Récupération du parent
 
 divMenu.appendChild(menu); // Ajout de menu à divMenu
+
+fetchBitcoinData(); // Appel de la fonction par défaut 
 
 menu.addEventListener("change", () => { // Gestion du changement de menu
   const option = menu.value; // Récupération de l'option choisie
