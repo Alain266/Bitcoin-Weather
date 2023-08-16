@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://s3.tradingview.com/tv.js" defer></script>
 </head>
 <body>
     <video id="backgroundVideo" autoplay muted loop> <!-- Ajoute la vidéo de fond -->
@@ -29,8 +30,38 @@
                 Le comportement du marché de la cryptographie est très émotionnel. Les gens ont tendance à devenir gourmands lorsque le marché est en hausse, ce qui se traduit par FOMO (Fear of missing out). De plus, les gens vendent souvent leurs pièces en réaction irrationnelle en voyant des chiffres rouges. Avec notre indice de peur et de cupidité, nous essayons de vous sauver de vos propres réactions émotionnelles excessives. Il y a deux hypothèses simples : <br>
                 Une peur extrême peut être un signe que les investisseurs sont trop inquiets. Cela pourrait être une opportunité d'achat . <br>
                 Lorsque les investisseurs deviennent trop avides , cela signifie que le marché doit subir une correction . <br>
-                Par conséquent, nous analysons le sentiment actuel du marché Bitcoin et comprimons les chiffres en un simple mètre de 0 à 100. Zéro signifie "Peur extrême", tandis que 100 signifie "Avidité extrême". Voir ci-dessous pour plus d'informations sur nos sources de données. </p>
+                Par conséquent, nous analysons le sentiment actuel du marché Bitcoin et comprimons les chiffres en un simple mètre de 0 à 100. Zéro signifie "Peur extrême", tandis que 100 signifie "Avidité extrême".</p>
         </div>
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_3c508"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "height": 610,    
+            "autosize": true,
+            "symbol": "BINANCE:BTCUSDT",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "fr",
+            "enable_publishing": true,
+            "withdateranges": true,
+            "range": "YTD",
+            "hide_side_toolbar": false,
+            "allow_symbol_change": true,
+            "details": true,
+            "hotlist": true,
+            "calendar": true,
+            "container_id": "tradingview_3c508"
+        }
+            );
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+
     </main>
     <footer id="footer"> <!-- Pied de page -->
     </footer>

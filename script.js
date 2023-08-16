@@ -1,3 +1,4 @@
+
 // Requête API
 const fetchBitcoinData = () => { //Affiche les données du bitcoin 
   const apiKey = '04c68aa5b52cdda6bb1abc160f8d8677';
@@ -39,8 +40,8 @@ const fetchBitcoinData = () => { //Affiche les données du bitcoin
           div1.appendChild(p3); // Ajout de p3 à div1
           div1.appendChild(p4); // Ajout de p4 à div1
           div1.appendChild(p5); // Ajout de p5 à div1
-          div1.appendChild(p6); // Ajout de p6 à div1
-  });
+          div1.appendChild(p6); // Ajout de p6 à div1    
+  })
 }
 
 const fetchEthereumData = () => { //Affiche les données de l'ethereum
@@ -128,5 +129,3 @@ ftr.innerText = "Copyright 2023 - All rights reserved"; // Ajout du texte
 
 const footer = document.getElementById("footer"); // Récupération du parent
 footer.appendChild(ftr); // Ajout de ftr à footer
-
-
