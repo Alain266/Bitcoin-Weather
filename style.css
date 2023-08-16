@@ -1,3 +1,8 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
 html{
     caret-color: transparent;
     text-rendering: geometricPrecision;
@@ -7,6 +12,98 @@ html{
 
 body {
     margin: 0 0 0 0;
+}
+
+#title {
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    width: max-content;
+}
+
+.navbar {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    @media screen and (max-width: 800px) {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #1317227c;
+        backdrop-filter: blur(5px);
+        z-index: 1;
+        display: none;
+    }
+}
+
+.navbar li {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.navbar li a{
+    color: #131722;
+    font-weight: bold;
+    font-size: 25px;
+    @media screen and (max-width: 800px) {
+        color: #ffc375; 
+    }
+}
+
+.navbar li a:hover {
+    zoom: 115%;
+}
+
+.menu-hamburger {
+    display: none;
+    position: absolute;
+    top : 120px;
+    right: 5%;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    @media screen and (max-width: 800px) {
+        display: block;
+    }
+}
+
+.menu-hamburger:hover {
+    rotate: 90deg;
+}
+
+.mobile-menu {
+    display: flex;
+}
+
+.logobtc {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    left: 50px;
+    height: 100px;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}
+
+.logobtc2 {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    right: 50px;
+    height: 100px;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 }
 
 #backgroundVideo {
@@ -19,11 +116,6 @@ body {
     opacity: 0.5;
 }
 
-#title {
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-}
 
 #menu {
     margin-bottom: 50px;
@@ -86,4 +178,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    z-index: 2;
 }

@@ -41,6 +41,7 @@ const fetchBitcoinData = () => { //Affiche les données du bitcoin
           div1.appendChild(p4); // Ajout de p4 à div1
           div1.appendChild(p5); // Ajout de p5 à div1
           div1.appendChild(p6); // Ajout de p6 à div1    
+          div1.style.backgroundColor = "#f79413"; // Ajout de la couleur de fond
   })
 }
 
@@ -85,6 +86,7 @@ const fetchEthereumData = () => { //Affiche les données de l'ethereum
           div1.appendChild(p4); // Ajout de p4 à div1
           div1.appendChild(p5); // Ajout de p5 à div1
           div1.appendChild(p6); // Ajout de p6 à div1
+          div1.style.backgroundColor = "#627eea"; // Ajout de la couleur de fond
   });
 }
 
@@ -96,7 +98,16 @@ const divTitre = document.getElementById("title"); // Récupération du parent
 
 divTitre.appendChild(titre); // Ajout de titre à divTitre
 
-// Menu déroulant de la page
+//Menu navigation
+const menuH = document.querySelector(".menu-hamburger");
+const link = document.querySelector(".navbar");
+
+menuH.addEventListener("click", () => {
+    link.classList.toggle("mobile-menu");  
+})
+
+
+// Menu déroulant de la page (Bitcoin/Ethereum)
 const menu = document.createElement("select"); // Création d'un menu déroulant
 
 const section1 = document.createElement("option"); // Création d'une option
