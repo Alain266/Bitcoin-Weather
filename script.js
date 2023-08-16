@@ -1,7 +1,7 @@
 
 // Requête API
 const fetchBitcoinData = () => { //Affiche les données du bitcoin 
-  const apiKey = '04c68aa5b52cdda6bb1abc160f8d8677';
+  const apiKey = 'f5bbc4d17f81eabbae5500ed78270413';
   const apiUrl = `https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=${apiKey}`;
   fetch(apiUrl)
     .then(response => response.json())
@@ -45,7 +45,7 @@ const fetchBitcoinData = () => { //Affiche les données du bitcoin
 }
 
 const fetchEthereumData = () => { //Affiche les données de l'ethereum
-  const apiKey = '04c68aa5b52cdda6bb1abc160f8d8677';
+  const apiKey = 'f5bbc4d17f81eabbae5500ed78270413';
   const apiUrl = `https://financialmodelingprep.com/api/v3/quote/ETHUSD?apikey=${apiKey}`;
   fetch(apiUrl)
     .then(response => response.json())
