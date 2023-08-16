@@ -59,13 +59,13 @@ body {
     margin-bottom: 75px;
     width: 80%;
     @media screen and (max-width: 600px) {
-        width: 400px;
+        width: 90%;
 }}
 
 .tradingview-widget-container {
     margin: auto;
     margin-bottom: 100px;
-    width: 90%;
+    width: 100%;
     height: 500px;
     border: 16px solid black;
     border-radius: 50px;
