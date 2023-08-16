@@ -129,3 +129,4 @@ ftr.innerText = "Copyright 2023 - All rights reserved"; // Ajout du texte
 const footer = document.getElementById("footer"); // Récupération du parent
 footer.appendChild(ftr); // Ajout de ftr à footer
 
+
