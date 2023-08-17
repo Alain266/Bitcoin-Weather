@@ -66,8 +66,8 @@ body {
         justify-content: center;
         background-color: #1317227c;
         backdrop-filter: blur(5px);
-        z-index: 1;
         display: none;
+        z-index: 3;
     }
 }
 
