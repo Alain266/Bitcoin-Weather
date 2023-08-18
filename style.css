@@ -124,7 +124,8 @@ body {
 
 @media screen and (max-width: 2500px) {
     .menu-hamburger {
-    display: block;    
+    display: block;  
+    top : 220px;  
     }    
 }
 
@@ -149,8 +150,8 @@ body {
 @media screen and (max-width: 2500px) {
     .logobtc {
     position: relative;
-    top: 25px;
-    left: 10px;   
+    top: 15px;
+    left: 3px;   
     }
 }
 
