@@ -1,8 +1,11 @@
 // Overlay de chargement
 window.addEventListener("load", function() {
   // Lorsque la page et les ressources sont totalement chargées
-  var loadingOverlay = document.querySelector(".loading-overlay");
+  var loadingOverlay = document.querySelector(".loading-overlay");// Cacher l'overlay de chargement
   loadingOverlay.style.display = "none"; // Cacher l'overlay de chargement
+
+  var elementToAnimate = document.querySelector(".animation1, .animation2, .animation3, .fade-in"); // Récupération de l'élément
+  elementToAnimate.classList.add("animation-initialized"); // Ajout de la classe d'animation
 });
 
 // Requête API
