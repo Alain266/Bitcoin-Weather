@@ -27,12 +27,6 @@
     animation: spin 2s linear infinite; /* Animation du chargement */
 }
 
-@media screen and (max-width: 2500px) { /* Responsive */
-    .loading-image {
-        width: 100px;
-        height: 100px;
-    }
-}
     @keyframes spin {
         0% {
             transform: rotate(0deg);
@@ -71,22 +65,6 @@ body {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 2500px) {
-    .navbar {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #1317227c;
-    backdrop-filter: blur(5px);
-    display: none;
-    z-index: 2;    
-    }   
-}
-
 .navbar li {
     display: flex;
     flex-direction: column;
@@ -98,12 +76,6 @@ body {
     color: #131722;
     font-weight: bold;
     font-size: 25px;
-}
-
-@media screen and (max-width: 2500px) {
-    .navbar li a{
-    color: #ffc375;     
-    }  
 }
 
 .navbar li a:hover {
@@ -122,13 +94,6 @@ body {
     text-shadow: 5px 5px 3px #0000003b;
 }
 
-@media screen and (max-width: 2500px) {
-    .menu-hamburger {
-    display: block;  
-    top : 220px;  
-    }    
-}
-
 .menu-hamburger:hover {
     rotate: 90deg;
 }
@@ -145,14 +110,6 @@ body {
     height: 100px;
     border-radius: 50%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
-}
-
-@media screen and (max-width: 2500px) {
-    .logobtc {
-    position: relative;
-    top: 15px;
-    left: 3px;   
-    }
 }
 
 /* Animations */
@@ -212,12 +169,6 @@ body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 
-@media screen and (max-width: 2500px) {
-    .logobtc2 {
-    display: none;
-    }  
-}
-
 #backgroundVideo {
     position: fixed;
     right: 0;
@@ -252,11 +203,6 @@ select {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 
-@media screen and (max-width: 2500px) {
-    select {
-    margin-top: 50px; 
-    }   
-}
 
 select:hover {
     border: 3px solid black; 
@@ -304,12 +250,6 @@ select:hover {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 
-@media screen and (max-width: 2500px) {
-    #content3 {
-    width: 90%;
-    }
-}
-
 #content3 p {
     margin: auto;
     text-align: center;
@@ -341,12 +281,6 @@ select:hover {
     border-radius: 5%;
 }
 
-@media screen and (max-width: 2500px) {
-    #fearAndGreedText {
-        width: 90%; 
-    }
-}
-
 footer {
     position: fixed;
     bottom: 0px;
@@ -357,4 +291,56 @@ footer {
     text-align: center;
     padding: 10px;
     z-index: 2;
+}
+
+@media screen and (max-width: 2500px) { /* Responsive */
+    .loading-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #1317227c;
+        backdrop-filter: blur(5px);
+        display: none;
+        z-index: 2;    
+    } 
+
+    .navbar li a{
+        color: #ffc375;     
+    }  
+    
+    .menu-hamburger {
+        display: block;  
+        top : 220px;  
+    }  
+
+    .logobtc {
+        position: relative;
+        top: 15px;
+        left: 3px;   
+    }
+
+    .logobtc2 {
+        display: none;
+    }  
+
+    select {
+        margin-top: 50px; 
+    } 
+
+    #content3 {
+        width: 90%;
+    }
+
+    #fearAndGreedText {
+        width: 90%; 
+    }   
 }
