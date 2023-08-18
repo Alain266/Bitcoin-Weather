@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
 
 // Requête API
 const fetchBitcoinData = () => { //Affiche les données du bitcoin 
-  const apiKey = '04c68aa5b52cdda6bb1abc160f8d8677';
+  const apiKey = '3bda116dae778836c1115f7627197359';
   const apiUrl = `https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=${apiKey}`;
   fetch(apiUrl)
     .then(response => response.json())
@@ -50,12 +50,14 @@ const fetchBitcoinData = () => { //Affiche les données du bitcoin
           div1.appendChild(p5); // Ajout de p5 à div1
           div1.appendChild(p6); // Ajout de p6 à div1    
           div1.style.backgroundColor = "#f794136c"; // Ajout de la couleur de fond
-          div1.style.backdropFilter = "blur(10px)"; // Ajout de l'effet de filter: blur(5px);
+          div1.style.backdropFilter = "blur(10px)"; // Ajout de l'effet de filter: blur(5px)
+          var tradingViewScript = document.querySelector('script[src="script-tradingview-btc.js"]');
+          tradingViewScript.src = "script-tradingview-eth.js";
   })
 }
 
 const fetchEthereumData = () => { //Affiche les données de l'ethereum
-  const apiKey = 'f5bbc4d17f81eabbae5500ed78270413';
+  const apiKey = '3bda116dae778836c1115f7627197359';
   const apiUrl = `https://financialmodelingprep.com/api/v3/quote/ETHUSD?apikey=${apiKey}`;
   fetch(apiUrl)
     .then(response => response.json())
@@ -118,13 +120,11 @@ menuH.addEventListener("click", () => {
     link.classList.toggle("mobile-menu");  
 })
 
-
 // Menu déroulant de la page (Bitcoin/Ethereum)
 const menu = document.createElement("select"); // Création d'un menu déroulant
 menu.style.fontSize = "18px"; // Taille du texte
 menu.style.textAlign = "center"; // Alignement du texte
 menu.style.backgroundColor = "#ffffff94"; // Couleur de fond
-
 
 const section1 = document.createElement("option"); // Création d'une option
 section1.innerText = "BTC"; // Ajout du texte
@@ -159,10 +159,7 @@ ftr.innerText = "Copyright 2023 - All rights reserved"; // Ajout du texte
 const footer = document.getElementById("footer"); // Récupération du parent
 footer.appendChild(ftr); // Ajout de ftr à footer
 
-
 // DEBUT ANIMATION
-
-
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -220,7 +217,4 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
-
 // FIN ANIMATION
-
-
